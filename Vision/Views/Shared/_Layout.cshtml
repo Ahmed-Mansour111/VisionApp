@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Qasr El Bagawat Hotel</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />*@
+
+    <!--css Links-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <!------------------------------------------
+      Main CSS File
+    <------------------------------------------>
+    <!-- Bootstrap CSS -->
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/animations.css" rel="stylesheet" />
+    <link href="~/css/bootstrap-dropdownhover.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/custom-animation.css" rel="stylesheet" />
+    <link href="~/css/elegant-icons.css" rel="stylesheet" />
+    <link href="~/css/fancybox.css" rel="stylesheet" />
+    <link href="~/css/flaticon.css" rel="stylesheet" />
+    <link href="~/css/flexslider.css" rel="stylesheet" />
+    <link href="~/css/font-awesome-animation.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/css/menu.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="~/css/player.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/slick.css" rel="stylesheet" />
+    <link href="~/css/stroke-gap-icons.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+
+</head>
+<body>
+
+    @*<div class="preloader"></div>*@
+
+    <!-- Start Page Wrapper  -->
+    <div class="page-wrapper">
+
+        <!-- Header Section Start -->
+        <header class="header header-style-2 clearfix">
+
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="contact-info">
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-phone"></i>
+                                        +2 01200012 669
+                                    </li>
+
+                                    <li>
+                                        <i class="flaticon-contact"></i>
+                                        info@qasrelbagawat.com
+                                    </li>
+
+
+
+                                    <li>
+                                        <i class="flaticon-pin-1"></i>
+                                        Kharga Oasis, New Valley, Western Desert, Egypt.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+
+
+                            <div class="contact-info">
+                                <ul style="border: 0">
+
+
+                                    <li style="font-family: cairo">
+                                        <i class="flaticon-earth-globe"></i>
+                                        <a style="color: #fff" href="#">عـربي</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="social-icons">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-style bg-transparent menu-hover-2  clearfix">
+                <!-- main-navigation start -->
+                <div class="main-navigation main-mega-menu animated">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                            <!-- header dropdown buttons end-->
+                            <a class="navbar-brand" href="#">
+                                <img id="logo_img" src="images/logo-2.png" alt="">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+
+                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+                                <!-- main-menu -->
+                                <ul class="navbar-nav ml-xl-auto">
+
+
+
+
+
+                                    <li class="nav-item dropdown active">
+                                        <a asp-controller="Home" asp-action="Index" class="nav-link ">Home</a>
+
+
+                                    </li>
+
+
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a asp-controller="Hotels" asp-action="Index" class="nav-link ">	Hotel  </a>
+
+
+                                    </li>
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a asp-controller="Facilities" asp-action="Index" class="nav-link ">Facilities</a>
+
+
+                                    </li>
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media</a>
+
+                                        <div class="dropdown-menu left-1">
+                                            <div class="dropdown">
+                                                <a class="dropdown-item" href="#">Gallery </a>
+                                                <a class="dropdown-item" href="#">video</a>
+
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link "
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  Contact</a>
+
+
+                                    </li>
+
+
+
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- main-navigation end -->
+            </div>
+
+
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+
+        <!------------------------------------------
+    Main JavaScript
+    <------------------------------------------>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <!-- Optional JavaScript -->
+        <script src="js/bootstrap-dropdownhover.min.js"></script>
+        <script src="js/bootstrap-slider.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/css3-animate-it.js"></script>
+        <script src="js/magnific-popup.min.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/player-min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <!-- Custom JavaScript -->
+        <script src="js/script.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

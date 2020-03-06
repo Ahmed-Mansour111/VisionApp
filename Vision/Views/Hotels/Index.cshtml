@@ -1,0 +1,55 @@
+﻿
+@model ReflectionIT.Mvc.Paging.PagingList<Vision.Models.Hotel>
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *,ReflectionIT.Mvc.Paging
+
+@{
+    ViewData["Title"] = "Index";
+    int counter = 0;
+}
+
+
+
+    <div style="margin-top:100px;">
+
+
+        <nav aria-label="Hotel Paging">
+            @await this.Component.InvokeAsync("Pager", new { PagingList = this.Model })
+        </nav>
+
+                    <div class="row">
+
+
+                        @foreach (var item in Model)
+
+                        {
+                           if (counter != 0 && counter % 3 == 0)
+                            {
+                            @:</div>
+                            @:<div class="row">
+                            }
+
+                            <div class="col-sm-4 " style="padding:5px 5px 5px 5px ">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.ImageUrl)" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">@Html.DisplayFor(modelItem => item.Name)</p>
+                                        <p class="card-text">@Html.DisplayFor(modelItem => item.Location)</p>
+                                        <a class="btn btn-lg" asp-controller="Facilities" asp-action="Index">Facility</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            counter ++;
+                        }
+                    </div>
+                </div>
+
+
+           
+        
+
+
+<nav aria-label="Hotel Paging">
+    <vc:Pager Paging-List="@Model" />
+</nav>

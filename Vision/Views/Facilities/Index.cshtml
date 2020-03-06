@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Vision.Models.Facility>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div style="margin-top:100px;">
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.FacilityImageUrl)" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.FacilityName)</p>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
